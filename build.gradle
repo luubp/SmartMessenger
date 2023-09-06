@@ -2,6 +2,7 @@
 buildscript {
 
     ext.nav_version = "2.5.3"
+    ext.hilt_version = "2.47"
 
     repositories {
         // Make sure that you have the following two repositories
@@ -14,10 +15,10 @@ buildscript {
 
         // Add the dependency for the Google services Gradle plugin
         classpath 'com.google.gms:google-services:4.3.15'
-        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath 'com.android.tools.build:gradle:8.1.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
-
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
 
     }
 }
